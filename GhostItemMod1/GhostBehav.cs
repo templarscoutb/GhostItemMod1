@@ -5,13 +5,14 @@ using R2API;
 using R2API.AssetPlus;
 using R2API.Utils;
 using RoR2;
+using RoR2.Skills;
 using UnityEngine;
-using CaptainDefenseMatrixController = On.RoR2.CaptainDefenseMatrixController;
+
 
 namespace GhostItemMod1
 {
     [BepInDependency(R2API.R2API.PluginGUID)]
-    [BepInPlugin("com.Paymon.GhostItem", "GhostItem", "1.0.0")]
+    [BepInPlugin("com.Paymon.GhostItem", "GhostItem", "0.0.1")]
     [R2APISubmoduleDependency(nameof(AssetPlus), nameof(ItemAPI), nameof(ItemDropAPI), nameof(ResourcesAPI))]
     public class GhostBehav : BaseUnityPlugin
     {
@@ -25,13 +26,17 @@ namespace GhostItemMod1
             On.RoR2.TeleporterInteraction.OnInteractionBegin += orig_OnTPInteractionBegin;
             On.RoR2.SceneDirector.PlaceTeleporter += orig_OnTPPlace;
             On.RoR2.CaptainDefenseMatrixController.TryGrantItem += orig_CDMController;
-            
-            //console command
-            R2API.Utils.CommandHelper.AddToConsoleWhenReady();
         }
-        private void orig_CDMController(On.RoR2.CaptainDefenseMatrixController.orig_TryGrantItem orig)
+        //Using captains defensive script to spawn Ghost when charter spawns in
+        private void orig_CDMController(On.RoR2.CaptainDefenseMatrixController.orig_TryGrantItem orig, CaptainDefenseMatrixController self)
         {
+            var characterBody = self.GetFieldValue<CharacterBody>("characterBody");
             
+            if (characterBody.inventory.GetItemCount(GhostItemMod1.GhostIndex) >= 0)
+            {
+                characterBody.master.inventory.GiveItem(GhostItemMod1.GhostIndex);
+            }
+            orig(self);
         }
 
         private void orig_OnTPPlace(On.RoR2.SceneDirector.orig_PlaceTeleporter orig, SceneDirector self)
@@ -56,7 +61,7 @@ namespace GhostItemMod1
             orig(self, info);
             var characterBody = self.body;
             if (!teleporterActive && // If the teleporter hasn't been touched yet that level
-                characterBody.inventory.GetItemCount(GhostItem.GhostIndex) > 0 && // Check whether or not they have the Ghost
+                characterBody.inventory.GetItemCount(GhostItemMod1.GhostIndex) > 0 && // Check whether or not they have the Ghost
                                                                         
                 characterBody.master.IsDeadAndOutOfLivesServer()) // And make sure they're dead before respawning them
                                                               // or this will respawn them every time they take damage
