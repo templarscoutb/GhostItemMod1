@@ -2,13 +2,16 @@ using R2API;
 using RoR2;
 using System;
 using System.Reflection;
+using R2API.Utils;
 using UnityEngine;
 
 namespace GhostItemMod1
 {
     public class GhostItem
     {
+        
         public static ItemIndex GhostIndex;
+        public static GameObject GhostPrefab;
 
         public static void Init()
         {
@@ -59,14 +62,14 @@ namespace GhostItemMod1
                 }
             };
 
-            GameObject followerPrefab = Resources.Load<GameObject>("@GhostBundle:Assets/Ghost/Ghost.prefab");
+            GameObject GhostPrefab = Resources.Load<GameObject>("@GhostBundle:Assets/Ghost/Ghost.prefab");
             Vector3 generalScale = new Vector3(0.05f, 0.05f, 0.05f);
             ItemDisplayRuleDict rules = new ItemDisplayRuleDict(new ItemDisplayRule[]
             {
                 new ItemDisplayRule
                 {
                     ruleType = ItemDisplayRuleType.ParentedPrefab,
-                    followerPrefab = followerPrefab,
+                    followerPrefab = GhostPrefab,
                     childName = "IKArmPole.l",
                     localPos = new Vector3(-0.22f, 0f, 0f),
                     localAngles = new Vector3(0f, -0.05f, 0f),
@@ -78,7 +81,7 @@ namespace GhostItemMod1
                 new ItemDisplayRule
                 {
                     ruleType = ItemDisplayRuleType.ParentedPrefab,
-                    followerPrefab = followerPrefab,
+                    followerPrefab = GhostPrefab,
                     childName = "Pelvis",
                     localPos = new Vector3(-0.22f, 0f, 0f),
                     localAngles = new Vector3(0f, -0.05f, 0f),
@@ -90,7 +93,7 @@ namespace GhostItemMod1
                 new ItemDisplayRule
                 {
                     ruleType = ItemDisplayRuleType.ParentedPrefab,
-                    followerPrefab = followerPrefab,
+                    followerPrefab = GhostPrefab,
                     childName = "LowerArmR",
                     localPos = new Vector3(-2f, 6f, 0f),
                     localAngles = new Vector3(45f, -90f, 0f),
@@ -102,7 +105,7 @@ namespace GhostItemMod1
                 new ItemDisplayRule
                 {
                     ruleType = ItemDisplayRuleType.ParentedPrefab,
-                    followerPrefab = followerPrefab,
+                    followerPrefab = GhostPrefab,
                     childName = "Pelvis",
                     localPos = new Vector3(-0.25f, 0f, 0f),
                     localAngles = new Vector3(0f, -0.05f, 0f),
@@ -114,7 +117,7 @@ namespace GhostItemMod1
                 new ItemDisplayRule
                 {
                     ruleType = ItemDisplayRuleType.ParentedPrefab,
-                    followerPrefab = followerPrefab,
+                    followerPrefab = GhostPrefab,
                     childName = "IKArmPole.l",
                     localPos = new Vector3(-0.21f, 0f, 0f),
                     localAngles = new Vector3(0f, -0.05f, 0f),
@@ -126,7 +129,7 @@ namespace GhostItemMod1
                 new ItemDisplayRule
                 {
                     ruleType = ItemDisplayRuleType.ParentedPrefab,
-                    followerPrefab = followerPrefab,
+                    followerPrefab = GhostPrefab,
                     childName = "Pelvis",
                     localPos = new Vector3(-0.22f, 0f, 0f),
                     localAngles = new Vector3(0f, -0.05f, 0f),
@@ -138,7 +141,7 @@ namespace GhostItemMod1
                 new ItemDisplayRule
                 {
                     ruleType = ItemDisplayRuleType.ParentedPrefab,
-                    followerPrefab = followerPrefab,
+                    followerPrefab = GhostPrefab,
                     childName = "WeaponPlatform",
                     localPos = new Vector3(0.2f, 0.05f, 0.2f),
                     localAngles = new Vector3(-45f, 0f, 0f),
@@ -150,7 +153,7 @@ namespace GhostItemMod1
                 new ItemDisplayRule
                 {
                     ruleType = ItemDisplayRuleType.ParentedPrefab,
-                    followerPrefab = followerPrefab,
+                    followerPrefab = GhostPrefab,
                     childName = "Pelvis",
                     localPos = new Vector3(-0.22f, 0f, 0f),
                     localAngles = new Vector3(0f, -0.05f, 0f),
@@ -162,7 +165,7 @@ namespace GhostItemMod1
                 new ItemDisplayRule
                 {
                     ruleType = ItemDisplayRuleType.ParentedPrefab,
-                    followerPrefab = followerPrefab,
+                    followerPrefab = GhostPrefab,
                     childName = "Hip",
                     localPos = new Vector3(-2.2f, 0f, 0f),
                     localAngles = new Vector3(-10f, -0.05f, 0f),
@@ -174,7 +177,7 @@ namespace GhostItemMod1
                 new ItemDisplayRule
                 {
                     ruleType = ItemDisplayRuleType.ParentedPrefab,
-                    followerPrefab = followerPrefab,
+                    followerPrefab = GhostPrefab,
                     childName = "Pelvis",
                     localPos = new Vector3(-0.22f, 0f, 0f),
                     localAngles = new Vector3(0f, -0.05f, 0f),

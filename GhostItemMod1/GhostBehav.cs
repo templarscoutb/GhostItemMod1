@@ -1,11 +1,8 @@
 using System;
 using BepInEx;
-using BepInEx.Logging;
 using R2API;
-using R2API.AssetPlus;
 using R2API.Utils;
 using RoR2;
-using RoR2.Skills;
 using UnityEngine;
 
 
@@ -13,7 +10,7 @@ namespace GhostItemMod1
 {
     [BepInDependency(R2API.R2API.PluginGUID)]
     [BepInPlugin("com.Paymon.GhostItem", "GhostItem", "0.0.1")]
-    [R2APISubmoduleDependency(nameof(AssetPlus), nameof(ItemAPI), nameof(ItemDropAPI), nameof(ResourcesAPI))]
+    [R2APISubmoduleDependency(nameof(SoundAPI),nameof(LanguageAPI),nameof(FontAPI), nameof(ItemAPI), nameof(ItemDropAPI), nameof(ResourcesAPI))]
     public class GhostBehav : BaseUnityPlugin
     {
 
