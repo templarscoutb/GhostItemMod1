@@ -1,0 +1,64 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netstandard2.0</TargetFramework>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <Reference Include="0Harmony, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null">
+        <HintPath>..\..\RoR2SharedItems\Dependencies\0Harmony.dll</HintPath>
+      </Reference>
+      <Reference Include="Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+        <HintPath>..\..\RoR2SharedItems\Dependencies\Assembly-CSharp.dll</HintPath>
+      </Reference>
+      <Reference Include="Assembly-CSharp.R2API.mm, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+        <HintPath>..\..\RoR2SharedItems\Dependencies\Assembly-CSharp.R2API.mm.dll</HintPath>
+      </Reference>
+      <Reference Include="BepInEx, Version=5.3.0.0, Culture=neutral, PublicKeyToken=null">
+        <HintPath>..\..\RoR2SharedItems\Dependencies\BepInEx.dll</HintPath>
+      </Reference>
+      <Reference Include="BepInEx.Harmony, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null">
+        <HintPath>..\..\RoR2SharedItems\Dependencies\BepInEx.Harmony.dll</HintPath>
+      </Reference>
+      <Reference Include="BepInEx.Preloader, Version=5.3.0.0, Culture=neutral, PublicKeyToken=null">
+        <HintPath>..\..\RoR2SharedItems\Dependencies\BepInEx.Preloader.dll</HintPath>
+      </Reference>
+      <Reference Include="MMHOOK_Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+        <HintPath>..\..\RoR2SharedItems\Dependencies\MMHOOK_Assembly-CSharp.dll</HintPath>
+      </Reference>
+      <Reference Include="Mono.Cecil, Version=0.10.4.0, Culture=neutral, PublicKeyToken=50cebf1cceb9d05e">
+        <HintPath>..\..\RoR2SharedItems\Dependencies\Mono.Cecil.dll</HintPath>
+      </Reference>
+      <Reference Include="Mono.Cecil.Mdb, Version=0.10.4.0, Culture=neutral, PublicKeyToken=50cebf1cceb9d05e">
+        <HintPath>..\..\RoR2SharedItems\Dependencies\Mono.Cecil.Mdb.dll</HintPath>
+      </Reference>
+      <Reference Include="Mono.Cecil.Pdb, Version=0.10.4.0, Culture=neutral, PublicKeyToken=50cebf1cceb9d05e">
+        <HintPath>..\..\RoR2SharedItems\Dependencies\Mono.Cecil.Pdb.dll</HintPath>
+      </Reference>
+      <Reference Include="Mono.Cecil.Rocks, Version=0.10.4.0, Culture=neutral, PublicKeyToken=50cebf1cceb9d05e">
+        <HintPath>..\..\RoR2SharedItems\Dependencies\Mono.Cecil.Rocks.dll</HintPath>
+      </Reference>
+      <Reference Include="MonoMod.RuntimeDetour, Version=20.8.3.5, Culture=neutral, PublicKeyToken=null">
+        <HintPath>..\..\RoR2SharedItems\Dependencies\MonoMod.RuntimeDetour.dll</HintPath>
+      </Reference>
+      <Reference Include="MonoMod.Utils, Version=20.8.3.5, Culture=neutral, PublicKeyToken=null">
+        <HintPath>..\..\RoR2SharedItems\Dependencies\MonoMod.Utils.dll</HintPath>
+      </Reference>
+      <Reference Include="R2API, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null">
+        <HintPath>..\..\RoR2SharedItems\Dependencies\R2API.dll</HintPath>
+      </Reference>
+      <Reference Include="UnityEngine, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+        <HintPath>..\..\RoR2SharedItems\Dependencies\UnityEngine.dll</HintPath>
+      </Reference>
+      <Reference Include="UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+        <HintPath>..\..\RoR2SharedItems\Dependencies\UnityEngine.CoreModule.dll</HintPath>
+      </Reference>
+      <Reference Include="UnityEngine.Networking, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+        <HintPath>..\..\RoR2SharedItems\Dependencies\UnityEngine.Networking.dll</HintPath>
+      </Reference>
+      <Reference Include="UnityEngine.PhysicsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+        <HintPath>..\..\RoR2SharedItems\Dependencies\UnityEngine.PhysicsModule.dll</HintPath>
+      </Reference>
+    </ItemGroup>
+
+</Project>
