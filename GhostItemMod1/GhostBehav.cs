@@ -6,6 +6,7 @@ using R2API.AssetPlus;
 using R2API.Utils;
 using RoR2;
 using UnityEngine;
+using CaptainDefenseMatrixController = On.RoR2.CaptainDefenseMatrixController;
 
 namespace GhostItemMod1
 {
@@ -23,6 +24,14 @@ namespace GhostItemMod1
             On.RoR2.HealthComponent.TakeDamage += orig_TakeDamage;
             On.RoR2.TeleporterInteraction.OnInteractionBegin += orig_OnTPInteractionBegin;
             On.RoR2.SceneDirector.PlaceTeleporter += orig_OnTPPlace;
+            On.RoR2.CaptainDefenseMatrixController.TryGrantItem += orig_CDMController;
+            
+            //console command
+            R2API.Utils.CommandHelper.AddToConsoleWhenReady();
+        }
+        private void orig_CDMController(On.RoR2.CaptainDefenseMatrixController.orig_TryGrantItem orig)
+        {
+            
         }
 
         private void orig_OnTPPlace(On.RoR2.SceneDirector.orig_PlaceTeleporter orig, SceneDirector self)
