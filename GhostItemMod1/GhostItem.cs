@@ -1,5 +1,6 @@
 using System;
 using BepInEx;
+using BepInEx.Logging;
 using R2API;
 using R2API.AssetPlus;
 using R2API.Utils;
@@ -8,16 +9,18 @@ using UnityEngine;
 
 namespace GhostItemMod1
 {
-    [BepInDependency("com.bepis.r2api")]
-    //Change these
-    [BepInPlugin("com.Paymon.GhostItem", "Ghost Item", "1.0.0")]
+    [BepInDependency(R2API.R2API.PluginGUID)]
+    [BepInPlugin("com.Paymon.GhostItem", "GhostItem", "1.0.0")]
     [R2APISubmoduleDependency(nameof(AssetPlus), nameof(ItemAPI), nameof(ItemDropAPI), nameof(ResourcesAPI))]
     public class GhostItem : BaseUnityPlugin
     {
+        internal new static ManualLogSource Logger;
         public bool teleporterActive = false;
         public void Awake()
         {
-            // RegisterItem();
+            Logger = base.Logger;
+            
+            Assets.Init();
             
             // Register all the hooks
             On.RoR2.HealthComponent.TakeDamage += orig_TakeDamage;
@@ -47,8 +50,8 @@ namespace GhostItemMod1
             orig(self, info);
             var characterBody = self.body;
             if (!teleporterActive && // If the teleporter hasn't been touched yet that level
-                characterBody.inventory.GetItemCount(ItemIndex.FireRing) > 0 && // Check whether or not they have the
-                                                                        // item (currently Kjaro's Band (the fire one)
+                characterBody.inventory.GetItemCount(ItemIndex.GhostItemIndex) > 0 && // Check whether or not they have the
+                                                                        
                 characterBody.master.IsDeadAndOutOfLivesServer()) // And make sure they're dead before respawning them
                                                               // or this will respawn them every time they take damage
             {
