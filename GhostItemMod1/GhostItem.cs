@@ -6,11 +6,11 @@ using UnityEngine;
 
 namespace GhostItemMod1
 {
-    internal class GhostItem
+    public class GhostItem
     {
-        internal static ItemIndex GhostIndex;
+        public static ItemIndex GhostIndex;
 
-        internal static void Init()
+        public static void Init()
         {
             AddProvider();
             AddTokens();

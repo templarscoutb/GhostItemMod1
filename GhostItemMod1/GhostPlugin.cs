@@ -19,6 +19,7 @@ namespace GhostItemMod1
         {
             if (instance == null) instance = this;
             GhostItem.Init();
+            
         }
     }
 }

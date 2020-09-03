@@ -32,9 +32,9 @@ namespace GhostItemMod1
         {
             var characterBody = self.GetFieldValue<CharacterBody>("characterBody");
             
-            if (characterBody.inventory.GetItemCount(GhostItemMod1.GhostIndex) >= 0)
+            if (characterBody.inventory.GetItemCount(GhostItem.GhostIndex) >= 0)
             {
-                characterBody.master.inventory.GiveItem(GhostItemMod1.GhostIndex);
+                characterBody.master.inventory.GiveItem(GhostItem.GhostIndex);
             }
             orig(self);
         }
@@ -61,7 +61,7 @@ namespace GhostItemMod1
             orig(self, info);
             var characterBody = self.body;
             if (!teleporterActive && // If the teleporter hasn't been touched yet that level
-                characterBody.inventory.GetItemCount(GhostItemMod1.GhostIndex) > 0 && // Check whether or not they have the Ghost
+                characterBody.inventory.GetItemCount(GhostItem.GhostIndex) > 0 && // Check whether or not they have the Ghost
                                                                         
                 characterBody.master.IsDeadAndOutOfLivesServer()) // And make sure they're dead before respawning them
                                                               // or this will respawn them every time they take damage
