@@ -19,11 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="efb606da-92a6-43e0-89bc-056d47b3412c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.GhostItemMod1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GhostItemMod1/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GhostItemMod1/GhostBehav.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GhostItemMod1/GhostBehav.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GhostItemMod1/GhostPlugin.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GhostItemMod1/GhostPlugin.cs" afterDir="false" />
-    </list>
+    <list default="true" id="efb606da-92a6-43e0-89bc-056d47b3412c" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -33,6 +29,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="mock://C:/Users/templ/RiderProjects/GhostItemMod1/GhostItemMod1/GhostBehav.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/GhostItemMod1/GhostBehav.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/GhostItemMod1/obj/Debug/netstandard2.0/GhostItemMod1.AssemblyInfo.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="mock://C:/Users/templ/RiderProjects/GhostItemMod1/GhostItemMod1/GhostBehav.cs" root0="SKIP_HIGHLIGHTING" />
@@ -94,7 +91,7 @@
       <workItem from="1599149886993" duration="132000" />
       <workItem from="1599150270017" duration="2291000" />
       <workItem from="1599154029972" duration="1976000" />
-      <workItem from="1599156483554" duration="6949000" />
+      <workItem from="1599156483554" duration="7304000" />
     </task>
     <task id="LOCAL-00001" summary="What">
       <created>1599144811295</created>
@@ -131,7 +128,14 @@
       <option name="project" value="LOCAL" />
       <updated>1599157860617</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="s">
+      <created>1599163652914</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1599163652914</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -172,10 +176,10 @@
       <screen x="0" y="0" width="1850" height="1080" />
     </state>
     <state x="563" y="314" width="723" height="464" key="MultipleFileMergeDialog/0.0.1850.1080@0.0.1850.1080" timestamp="1599145007712" />
-    <state x="517" y="273" key="Vcs.Push.Dialog.v2" timestamp="1599157870652">
+    <state x="517" y="273" key="Vcs.Push.Dialog.v2" timestamp="1599163659323">
       <screen x="0" y="0" width="1850" height="1080" />
     </state>
-    <state x="517" y="273" key="Vcs.Push.Dialog.v2/0.0.1850.1080@0.0.1850.1080" timestamp="1599157870652" />
+    <state x="517" y="273" key="Vcs.Push.Dialog.v2/0.0.1850.1080@0.0.1850.1080" timestamp="1599163659323" />
     <state x="869" y="453" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1599149893983">
       <screen x="0" y="0" width="1850" height="1080" />
     </state>
