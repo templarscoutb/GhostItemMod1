@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="efb606da-92a6-43e0-89bc-056d47b3412c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/GhostItemMod1/Assets.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GhostItemMod1/GhostItem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GhostItemMod1/GhostItem.cs" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="mock://C:/Users/templ/RiderProjects/GhostItemMod1/GhostItemMod1/GhostItem.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/templ/RiderProjects/GhostItemMod1/GhostItemMod1/GhostItem.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/GhostItemMod1/GhostItem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/GhostItemMod1/obj/Debug/netstandard2.0/GhostItemMod1.AssemblyInfo.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/GhostItemMod1/Hooks.cs" />
+        <option value="$PROJECT_DIR$/GhostItemMod1/Assets.cs" />
+        <option value="$PROJECT_DIR$/GhostItemMod1/GhostItem.cs" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1gypeBwcFSy9Y1rR2qA0nHwcOum" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+  </component>
+  <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <option name="selectedOptions">
+        <set />
+      </option>
+      <method v="2" />
+    </configuration>
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <option name="selectedOptions">
+        <set />
+      </option>
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="efb606da-92a6-43e0-89bc-056d47b3412c" name="Default Changelist" comment="" />
+      <created>1599096781897</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1599096781897</updated>
+      <workItem from="1599096784490" duration="1639000" />
+      <workItem from="1599098723912" duration="10798000" />
+      <workItem from="1599144958789" duration="4128000" />
+    </task>
+    <task id="LOCAL-00001" summary="What">
+      <created>1599144811295</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1599144811295</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="What" />
+    <option name="LAST_COMMIT_MESSAGE" value="What" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="1018" y="260" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1599101742213">
+      <screen x="0" y="0" width="1850" height="1080" />
+    </state>
+    <state x="1018" y="260" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1850.1080@0.0.1850.1080" timestamp="1599101742213" />
+    <state x="177" y="96" key="MergeDialog" timestamp="1599145007705">
+      <screen x="0" y="0" width="1850" height="1080" />
+    </state>
+    <state x="177" y="96" key="MergeDialog/0.0.1850.1080@0.0.1850.1080" timestamp="1599145007705" />
+    <state x="563" y="314" width="723" height="464" key="MultipleFileMergeDialog" timestamp="1599145007712">
+      <screen x="0" y="0" width="1850" height="1080" />
+    </state>
+    <state x="563" y="314" width="723" height="464" key="MultipleFileMergeDialog/0.0.1850.1080@0.0.1850.1080" timestamp="1599145007712" />
+    <state x="517" y="273" key="Vcs.Push.Dialog.v2" timestamp="1599144871682">
+      <screen x="0" y="0" width="1850" height="1080" />
+    </state>
+    <state x="517" y="273" key="Vcs.Push.Dialog.v2/0.0.1850.1080@0.0.1850.1080" timestamp="1599144871682" />
+    <state x="869" y="453" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1599144964906">
+      <screen x="0" y="0" width="1850" height="1080" />
+    </state>
+    <state x="869" y="453" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1850.1080@0.0.1850.1080" timestamp="1599144964906" />
+  </component>
+</project>
