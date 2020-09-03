@@ -1,4 +1,5 @@
-﻿using BepInEx;
+using System;
+using BepInEx;
 using R2API;
 using R2API.AssetPlus;
 using R2API.Utils;
@@ -96,4 +97,3 @@ namespace GhostItemMod1
         // }
     }
 }
-
