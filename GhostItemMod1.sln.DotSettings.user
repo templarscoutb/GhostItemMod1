@@ -18,4 +18,33 @@
 	<s:Boolean x:Key="/Default/AddReferences/RecentPaths/=E_003A_005CSteamExtra_005Csteamapps_005Ccommon_005CRisk_0020of_0020Rain_00202_005CRisk_0020of_0020Rain_00202_005FData_005CManaged_005CUnityEngine_002ENetworking_002Edll/@EntryIndexedValue">True</s:Boolean>
 	<s:Boolean x:Key="/Default/AddReferences/RecentPaths/=E_003A_005CSteamExtra_005Csteamapps_005Ccommon_005CRisk_0020of_0020Rain_00202_005CRisk_0020of_0020Rain_00202_005FData_005CManaged_005CUnityEngine_002EUI_002Edll/@EntryIndexedValue">True</s:Boolean>
 	<s:Boolean x:Key="/Default/AddReferences/RecentPaths/=E_003A_005CSteamExtra_005Csteamapps_005Ccommon_005CRisk_0020of_0020Rain_00202_005CRisk_0020of_0020Rain_00202_005FData_005CManaged_005CUnityEngine_002EUIElementsModule_002Edll/@EntryIndexedValue">True</s:Boolean>
-	<s:Boolean x:Key="/Default/AddReferences/RecentPaths/=E_003A_005CSteamExtra_005Csteamapps_005Ccommon_005CRisk_0020of_0020Rain_00202_005CRisk_0020of_0020Rain_00202_005FData_005CManaged_005CUnityEngine_002EUIModule_002Edll/@EntryIndexedValue">True</s:Boolean></wpf:ResourceDictionary>
+	<s:Boolean x:Key="/Default/AddReferences/RecentPaths/=E_003A_005CSteamExtra_005Csteamapps_005Ccommon_005CRisk_0020of_0020Rain_00202_005CRisk_0020of_0020Rain_00202_005FData_005CManaged_005CUnityEngine_002EUIModule_002Edll/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/AddReferences/RecentPaths/=E_003A_005CSteamExtra_005Csteamapps_005Ccommon_005CRoR2_0020Refs_005C0Harmony_002Edll/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/AddReferences/RecentPaths/=E_003A_005CSteamExtra_005Csteamapps_005Ccommon_005CRoR2_0020Refs_005CAssembly_002DCSharp_002Edll/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/AddReferences/RecentPaths/=E_003A_005CSteamExtra_005Csteamapps_005Ccommon_005CRoR2_0020Refs_005CAssembly_002DCSharp_002ER2API_002Emm_002Edll/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/AddReferences/RecentPaths/=E_003A_005CSteamExtra_005Csteamapps_005Ccommon_005CRoR2_0020Refs_005CBepInEx_002Edll/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/AddReferences/RecentPaths/=E_003A_005CSteamExtra_005Csteamapps_005Ccommon_005CRoR2_0020Refs_005CBepInEx_002EHarmony_002Edll/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/AddReferences/RecentPaths/=E_003A_005CSteamExtra_005Csteamapps_005Ccommon_005CRoR2_0020Refs_005CBepInEx_002EMonoMod_002ELoader_002Edll/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/AddReferences/RecentPaths/=E_003A_005CSteamExtra_005Csteamapps_005Ccommon_005CRoR2_0020Refs_005CBepInEx_002EPreloader_002Edll/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/AddReferences/RecentPaths/=E_003A_005CSteamExtra_005Csteamapps_005Ccommon_005CRoR2_0020Refs_005CMMHOOK_005FAssembly_002DCSharp_002Edll/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/AddReferences/RecentPaths/=E_003A_005CSteamExtra_005Csteamapps_005Ccommon_005CRoR2_0020Refs_005Cmono_002D2_002E0_002Dbdwgc_002Edll/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/AddReferences/RecentPaths/=E_003A_005CSteamExtra_005Csteamapps_005Ccommon_005CRoR2_0020Refs_005CMono_002ECecil_002Edll/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/AddReferences/RecentPaths/=E_003A_005CSteamExtra_005Csteamapps_005Ccommon_005CRoR2_0020Refs_005CMono_002ECecil_002EMdb_002Edll/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/AddReferences/RecentPaths/=E_003A_005CSteamExtra_005Csteamapps_005Ccommon_005CRoR2_0020Refs_005CMono_002ECecil_002EPdb_002Edll/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/AddReferences/RecentPaths/=E_003A_005CSteamExtra_005Csteamapps_005Ccommon_005CRoR2_0020Refs_005CMono_002ECecil_002ERocks_002Edll/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/AddReferences/RecentPaths/=E_003A_005CSteamExtra_005Csteamapps_005Ccommon_005CRoR2_0020Refs_005CMonoMod_002ERuntimeDetour_002Edll/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/AddReferences/RecentPaths/=E_003A_005CSteamExtra_005Csteamapps_005Ccommon_005CRoR2_0020Refs_005CMonoMod_002EUtils_002Edll/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/AddReferences/RecentPaths/=E_003A_005CSteamExtra_005Csteamapps_005Ccommon_005CRoR2_0020Refs_005CMonoPosixHelper_002Edll/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/AddReferences/RecentPaths/=E_003A_005CSteamExtra_005Csteamapps_005Ccommon_005CRoR2_0020Refs_005CR2API_002Edll/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/AddReferences/RecentPaths/=E_003A_005CSteamExtra_005Csteamapps_005Ccommon_005CRoR2_0020Refs_005CUnityEngine_002EAssetBundleModule_002Edll/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/AddReferences/RecentPaths/=E_003A_005CSteamExtra_005Csteamapps_005Ccommon_005CRoR2_0020Refs_005CUnityEngine_002EAudioModule_002Edll/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/AddReferences/RecentPaths/=E_003A_005CSteamExtra_005Csteamapps_005Ccommon_005CRoR2_0020Refs_005CUnityEngine_002ECoreModule_002Edll/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/AddReferences/RecentPaths/=E_003A_005CSteamExtra_005Csteamapps_005Ccommon_005CRoR2_0020Refs_005CUnityEngine_002Edll/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/AddReferences/RecentPaths/=E_003A_005CSteamExtra_005Csteamapps_005Ccommon_005CRoR2_0020Refs_005CUnityEngine_002EInputModule_002Edll/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/AddReferences/RecentPaths/=E_003A_005CSteamExtra_005Csteamapps_005Ccommon_005CRoR2_0020Refs_005CUnityEngine_002ENetworking_002Edll/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/AddReferences/RecentPaths/=E_003A_005CSteamExtra_005Csteamapps_005Ccommon_005CRoR2_0020Refs_005CUnityEngine_002EParticleSystemModule_002Edll/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/AddReferences/RecentPaths/=E_003A_005CSteamExtra_005Csteamapps_005Ccommon_005CRoR2_0020Refs_005CUnityEngine_002ETextCoreModule_002Edll/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/AddReferences/RecentPaths/=E_003A_005CSteamExtra_005Csteamapps_005Ccommon_005CRoR2_0020Refs_005CUnityEngine_002ETextRenderingModule_002Edll/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/AddReferences/RecentPaths/=E_003A_005CSteamExtra_005Csteamapps_005Ccommon_005CRoR2_0020Refs_005CUnityEngine_002EUI_002Edll/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/AddReferences/RecentPaths/=E_003A_005CSteamExtra_005Csteamapps_005Ccommon_005CRoR2_0020Refs_005CUnityEngine_002EUIElementsModule_002Edll/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/AddReferences/RecentPaths/=E_003A_005CSteamExtra_005Csteamapps_005Ccommon_005CRoR2_0020Refs_005CUnityEngine_002EUIModule_002Edll/@EntryIndexedValue">True</s:Boolean></wpf:ResourceDictionary>

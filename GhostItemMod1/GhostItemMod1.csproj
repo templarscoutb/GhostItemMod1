@@ -4,4 +4,88 @@
         <TargetFramework>netstandard2.0</TargetFramework>
     </PropertyGroup>
 
+    <ItemGroup>
+      <Reference Include="0Harmony, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null">
+        <HintPath>E:\SteamExtra\steamapps\common\RoR2 Refs\0Harmony.dll</HintPath>
+      </Reference>
+      <Reference Include="Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+        <HintPath>E:\SteamExtra\steamapps\common\RoR2 Refs\Assembly-CSharp.dll</HintPath>
+      </Reference>
+      <Reference Include="Assembly-CSharp.R2API.mm, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+        <HintPath>E:\SteamExtra\steamapps\common\RoR2 Refs\Assembly-CSharp.R2API.mm.dll</HintPath>
+      </Reference>
+      <Reference Include="BepInEx, Version=5.3.0.0, Culture=neutral, PublicKeyToken=null">
+        <HintPath>E:\SteamExtra\steamapps\common\RoR2 Refs\BepInEx.dll</HintPath>
+      </Reference>
+      <Reference Include="BepInEx.Harmony, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null">
+        <HintPath>E:\SteamExtra\steamapps\common\RoR2 Refs\BepInEx.Harmony.dll</HintPath>
+      </Reference>
+      <Reference Include="BepInEx.MonoMod.Loader, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+        <HintPath>E:\SteamExtra\steamapps\common\RoR2 Refs\BepInEx.MonoMod.Loader.dll</HintPath>
+      </Reference>
+      <Reference Include="BepInEx.Preloader, Version=5.3.0.0, Culture=neutral, PublicKeyToken=null">
+        <HintPath>E:\SteamExtra\steamapps\common\RoR2 Refs\BepInEx.Preloader.dll</HintPath>
+      </Reference>
+      <Reference Include="MMHOOK_Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+        <HintPath>E:\SteamExtra\steamapps\common\RoR2 Refs\MMHOOK_Assembly-CSharp.dll</HintPath>
+      </Reference>
+      <Reference Include="Mono.Cecil, Version=0.10.4.0, Culture=neutral, PublicKeyToken=50cebf1cceb9d05e">
+        <HintPath>E:\SteamExtra\steamapps\common\RoR2 Refs\Mono.Cecil.dll</HintPath>
+      </Reference>
+      <Reference Include="Mono.Cecil.Mdb, Version=0.10.4.0, Culture=neutral, PublicKeyToken=50cebf1cceb9d05e">
+        <HintPath>E:\SteamExtra\steamapps\common\RoR2 Refs\Mono.Cecil.Mdb.dll</HintPath>
+      </Reference>
+      <Reference Include="Mono.Cecil.Pdb, Version=0.10.4.0, Culture=neutral, PublicKeyToken=50cebf1cceb9d05e">
+        <HintPath>E:\SteamExtra\steamapps\common\RoR2 Refs\Mono.Cecil.Pdb.dll</HintPath>
+      </Reference>
+      <Reference Include="Mono.Cecil.Rocks, Version=0.10.4.0, Culture=neutral, PublicKeyToken=50cebf1cceb9d05e">
+        <HintPath>E:\SteamExtra\steamapps\common\RoR2 Refs\Mono.Cecil.Rocks.dll</HintPath>
+      </Reference>
+      <Reference Include="MonoMod.RuntimeDetour, Version=20.8.3.5, Culture=neutral, PublicKeyToken=null">
+        <HintPath>E:\SteamExtra\steamapps\common\RoR2 Refs\MonoMod.RuntimeDetour.dll</HintPath>
+      </Reference>
+      <Reference Include="MonoMod.Utils, Version=20.8.3.5, Culture=neutral, PublicKeyToken=null">
+        <HintPath>E:\SteamExtra\steamapps\common\RoR2 Refs\MonoMod.Utils.dll</HintPath>
+      </Reference>
+      <Reference Include="R2API, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null">
+        <HintPath>E:\SteamExtra\steamapps\common\RoR2 Refs\R2API.dll</HintPath>
+      </Reference>
+      <Reference Include="UnityEngine, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+        <HintPath>E:\SteamExtra\steamapps\common\RoR2 Refs\UnityEngine.dll</HintPath>
+      </Reference>
+      <Reference Include="UnityEngine.AssetBundleModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+        <HintPath>E:\SteamExtra\steamapps\common\RoR2 Refs\UnityEngine.AssetBundleModule.dll</HintPath>
+      </Reference>
+      <Reference Include="UnityEngine.AudioModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+        <HintPath>E:\SteamExtra\steamapps\common\RoR2 Refs\UnityEngine.AudioModule.dll</HintPath>
+      </Reference>
+      <Reference Include="UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+        <HintPath>E:\SteamExtra\steamapps\common\RoR2 Refs\UnityEngine.CoreModule.dll</HintPath>
+      </Reference>
+      <Reference Include="UnityEngine.InputModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+        <HintPath>E:\SteamExtra\steamapps\common\RoR2 Refs\UnityEngine.InputModule.dll</HintPath>
+      </Reference>
+      <Reference Include="UnityEngine.Networking, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+        <HintPath>E:\SteamExtra\steamapps\common\RoR2 Refs\UnityEngine.Networking.dll</HintPath>
+      </Reference>
+      <Reference Include="UnityEngine.ParticleSystemModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+        <HintPath>E:\SteamExtra\steamapps\common\RoR2 Refs\UnityEngine.ParticleSystemModule.dll</HintPath>
+      </Reference>
+      <Reference Include="UnityEngine.TextCoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+        <HintPath>E:\SteamExtra\steamapps\common\RoR2 Refs\UnityEngine.TextCoreModule.dll</HintPath>
+      </Reference>
+      <Reference Include="UnityEngine.TextRenderingModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+        <HintPath>E:\SteamExtra\steamapps\common\RoR2 Refs\UnityEngine.TextRenderingModule.dll</HintPath>
+      </Reference>
+      <Reference Include="UnityEngine.UI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+        <HintPath>E:\SteamExtra\steamapps\common\RoR2 Refs\UnityEngine.UI.dll</HintPath>
+      </Reference>
+      <Reference Include="UnityEngine.UIElementsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+        <HintPath>E:\SteamExtra\steamapps\common\RoR2 Refs\UnityEngine.UIElementsModule.dll</HintPath>
+      </Reference>
+      <Reference Include="UnityEngine.UIModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+        <HintPath>E:\SteamExtra\steamapps\common\RoR2 Refs\UnityEngine.UIModule.dll</HintPath>
+      </Reference>
+    </ItemGroup>
+
 </Project>

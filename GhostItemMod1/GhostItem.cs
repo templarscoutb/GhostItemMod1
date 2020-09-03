@@ -27,7 +27,7 @@ namespace GhostItemMod1
 
         private void orig_OnTPPlace(On.RoR2.SceneDirector.orig_PlaceTeleporter orig, SceneDirector self)
         {
-            // When the teleporter is placed on a level, set teleporterActive to false and call orig
+            // When the teleporter is placed on a level, set teleporter Active to false and call orig
             teleporterActive = false;
             orig(self);
         }
@@ -35,7 +35,7 @@ namespace GhostItemMod1
         private void orig_OnTPInteractionBegin(On.RoR2.TeleporterInteraction.orig_OnInteractionBegin orig,
             TeleporterInteraction self, Interactor activator)
         {
-            // When the teleporter is interacted with, set teleporterActive to true and call orig
+            // When the teleporter is interacted with, set teleporter Active to true and call orig
             teleporterActive = true;
             orig(self, activator);
         }
@@ -59,41 +59,5 @@ namespace GhostItemMod1
                 // Remove item or whatever penalty here
             }
         }
-
-        // Currently all commented out, here's where you'll register all your item stuff
-        
-        // public void RegisterItem()
-        // {
-        //     var ghostItemDef = new ItemDef
-        //     {
-        //         name = "GhostItem", // its the internal name, no spaces, apostrophes and stuff like that
-        //         tier = ItemTier.Tier3,
-        //         pickupModelPath = PrefabPath,
-        //         pickupIconPath = IconPath,
-        //         nameToken = "BISCOLEASH_NAME", // stylised name
-        //         pickupToken = "BISCOLEASH_PICKUP",
-        //         descriptionToken = "BISCOLEASH_DESC",
-        //         loreToken = "BISCOLEASH_LORE",
-        //         tags = new[]
-        //         {
-        //             ItemTag.Utility,
-        //             ItemTag.Damage
-        //         }
-        //     };
-        //
-        //     // var itemDisplayRules =
-        //     //     new ItemDisplayRule[1]; // keep this null if you don't want the item to show up on the survivor 3d model. You can also have multiple rules !
-        //     // itemDisplayRules[0].followerPrefab = BiscoLeashPrefab; // the prefab that will show up on the survivor
-        //     // itemDisplayRules[0].childName =
-        //     //     "Chest"; // this will define the starting point for the position of the 3d model, you can see what are the differents name available in the prefab model of the survivors
-        //     // itemDisplayRules[0].localScale = new Vector3(0.15f, 0.15f, 0.15f); // scale the model
-        //     // itemDisplayRules[0].localAngles = new Vector3(0f, 180f, 0f); // rotate the model
-        //     // itemDisplayRules[0].localPos =
-        //     //     new Vector3(-0.35f, -0.1f, 0f); // position offset relative to the childName, here the survivor Chest
-        //
-        //     var ghostItem = new CustomItem(ghostItemDef, null);
-        //
-        //     BiscoLeashItemIndex = ItemAPI.Add(biscoLeash); // ItemAPI sends back the ItemIndex of your item
-        // }
     }
 }
