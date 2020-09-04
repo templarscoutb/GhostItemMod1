@@ -22,7 +22,7 @@
     <list default="true" id="efb606da-92a6-43e0-89bc-056d47b3412c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GhostItemMod1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GhostItemMod1/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GhostItemMod1/GhostBehav.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GhostItemMod1/GhostBehav.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GhostItemMod1/GhostItem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GhostItemMod1/GhostItem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GhostItemMod1/GhostPlugin.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GhostItemMod1/GhostPlugin.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,6 +35,7 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="mock://C:/Users/templ/RiderProjects/GhostItemMod1/GhostItemMod1/GhostBehav.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/templ/RiderProjects/GhostItemMod1/GhostItemMod1/GhostBehav.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/templ/RiderProjects/GhostItemMod1/GhostItemMod1/GhostBehav.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/GhostItemMod1/GhostBehav.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/GhostItemMod1/obj/Debug/netstandard2.0/GhostItemMod1.AssemblyInfo.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="mock://C:/Users/templ/RiderProjects/GhostItemMod1/GhostItemMod1/GhostBehav.cs" root0="SKIP_HIGHLIGHTING" />
@@ -44,9 +45,9 @@
       <list>
         <option value="$PROJECT_DIR$/GhostItemMod1/Hooks.cs" />
         <option value="$PROJECT_DIR$/GhostItemMod1/Assets.cs" />
+        <option value="$PROJECT_DIR$/GhostItemMod1/GhostItem.cs" />
         <option value="$PROJECT_DIR$/GhostItemMod1/GhostPlugin.cs" />
         <option value="$PROJECT_DIR$/GhostItemMod1/GhostBehav.cs" />
-        <option value="$PROJECT_DIR$/GhostItemMod1/GhostItem.cs" />
       </list>
     </option>
   </component>
@@ -96,7 +97,7 @@
       <workItem from="1599149886993" duration="132000" />
       <workItem from="1599150270017" duration="2291000" />
       <workItem from="1599154029972" duration="1976000" />
-      <workItem from="1599156483554" duration="11484000" />
+      <workItem from="1599156483554" duration="15023000" />
     </task>
     <task id="LOCAL-00001" summary="What">
       <created>1599144811295</created>
@@ -154,7 +155,14 @@
       <option name="project" value="LOCAL" />
       <updated>1599165174711</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="s">
+      <created>1599171116012</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1599171116012</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -195,10 +203,10 @@
       <screen x="0" y="0" width="1850" height="1080" />
     </state>
     <state x="563" y="314" width="723" height="464" key="MultipleFileMergeDialog/0.0.1850.1080@0.0.1850.1080" timestamp="1599145007712" />
-    <state x="517" y="273" key="Vcs.Push.Dialog.v2" timestamp="1599165179127">
+    <state x="517" y="273" key="Vcs.Push.Dialog.v2" timestamp="1599171121856">
       <screen x="0" y="0" width="1850" height="1080" />
     </state>
-    <state x="517" y="273" key="Vcs.Push.Dialog.v2/0.0.1850.1080@0.0.1850.1080" timestamp="1599165179127" />
+    <state x="517" y="273" key="Vcs.Push.Dialog.v2/0.0.1850.1080@0.0.1850.1080" timestamp="1599171121856" />
     <state x="869" y="453" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1599149893983">
       <screen x="0" y="0" width="1850" height="1080" />
     </state>
