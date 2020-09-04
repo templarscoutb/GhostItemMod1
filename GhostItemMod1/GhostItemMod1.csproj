@@ -88,4 +88,9 @@
       </Reference>
     </ItemGroup>
 
+    <ItemGroup>
+      <None Remove="ghostmod" />
+      <EmbeddedResource Include="ghostmod" />
+    </ItemGroup>
+
 </Project>

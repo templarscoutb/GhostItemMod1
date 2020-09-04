@@ -1,6 +1,6 @@
 using BepInEx;
 using R2API.Utils;
-using UnityEngine.Experimental.PlayerLoop;
+
 
 namespace GhostItemMod1
 {
@@ -12,7 +12,7 @@ namespace GhostItemMod1
     {
         private const string modName = "GhostItem";
         private const string modGuid = "com.PaymonTheVoidwalker." + modName;
-        private const string modVer = "o.o.1";
+        private const string modVer = "0.0.1";
         internal static GhostPlugin instance;
 
         private void Awake()

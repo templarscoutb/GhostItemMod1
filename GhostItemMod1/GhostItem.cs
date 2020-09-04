@@ -2,7 +2,6 @@ using R2API;
 using RoR2;
 using System;
 using System.Reflection;
-using R2API.Utils;
 using UnityEngine;
 
 namespace GhostItemMod1
@@ -24,7 +23,7 @@ namespace GhostItemMod1
         private static void AddProvider()
         {
                                                                                                          //namespace.asset bundle name
-            using (System.IO.Stream stream = Assembly.GetExecutingAssembly().GetManifestResourceStream("GhostItemMod1.Ghost"))
+            using (System.IO.Stream stream = Assembly.GetExecutingAssembly().GetManifestResourceStream("GhostItemMod1.ghostmod"))
             {
                 AssetBundle bundle = AssetBundle.LoadFromStream(stream);
                 AssetBundleResourcesProvider provider = new AssetBundleResourcesProvider("@GhostBundle", bundle);

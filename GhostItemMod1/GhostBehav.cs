@@ -6,7 +6,7 @@ using UnityEngine;
 
 namespace GhostItemMod1
 {
-    public class GhostBehav : BaseUnityPlugin
+    public class GhostBehav : MonoBehaviour
     {
 
         public bool teleporterActive = false;
