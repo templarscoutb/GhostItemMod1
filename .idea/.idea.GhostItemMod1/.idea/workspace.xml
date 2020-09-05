@@ -34,6 +34,7 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="mock://C:/Users/templ/RiderProjects/GhostItemMod1/GhostItemMod1/GhostItem.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/templ/RiderProjects/GhostItemMod1/GhostItemMod1/GhostItem.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/templ/RiderProjects/GhostItemMod1/GhostItemMod1/GhostItem.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/GhostItemMod1/GhostBehav.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/GhostItemMod1/obj/Debug/netstandard2.0/GhostItemMod1.AssemblyInfo.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -96,7 +97,7 @@
       <workItem from="1599154029972" duration="1976000" />
       <workItem from="1599156483554" duration="16665000" />
       <workItem from="1599193558736" duration="949000" />
-      <workItem from="1599225908922" duration="11619000" />
+      <workItem from="1599225908922" duration="17409000" />
     </task>
     <task id="LOCAL-00001" summary="What">
       <created>1599144811295</created>
@@ -182,7 +183,14 @@
       <option name="project" value="LOCAL" />
       <updated>1599266647027</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Working">
+      <created>1599326461524</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1599326461524</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -229,9 +237,9 @@
       <screen x="0" y="0" width="1850" height="1080" />
     </state>
     <state x="517" y="273" key="Vcs.Push.Dialog.v2/0.0.1850.1080@0.0.1850.1080" timestamp="1599266656442" />
-    <state x="869" y="453" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1599149893983">
+    <state x="869" y="453" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1599335465019">
       <screen x="0" y="0" width="1850" height="1080" />
     </state>
-    <state x="869" y="453" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1850.1080@0.0.1850.1080" timestamp="1599149893983" />
+    <state x="869" y="453" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1850.1080@0.0.1850.1080" timestamp="1599335465019" />
   </component>
 </project>
