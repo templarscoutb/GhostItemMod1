@@ -22,7 +22,6 @@
     <list default="true" id="efb606da-92a6-43e0-89bc-056d47b3412c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GhostItemMod1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GhostItemMod1/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GhostItemMod1/GhostItem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GhostItemMod1/GhostItem.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GhostItemMod1/ghostmod" beforeDir="false" afterPath="$PROJECT_DIR$/GhostItemMod1/ghostmod" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,6 +32,8 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="mock://C:/Users/templ/RiderProjects/GhostItemMod1/GhostItemMod1/GhostItem.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/templ/RiderProjects/GhostItemMod1/GhostItemMod1/GhostItem.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/GhostItemMod1/GhostBehav.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/GhostItemMod1/obj/Debug/netstandard2.0/GhostItemMod1.AssemblyInfo.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -95,7 +96,7 @@
       <workItem from="1599154029972" duration="1976000" />
       <workItem from="1599156483554" duration="16665000" />
       <workItem from="1599193558736" duration="949000" />
-      <workItem from="1599225908922" duration="8351000" />
+      <workItem from="1599225908922" duration="11619000" />
     </task>
     <task id="LOCAL-00001" summary="What">
       <created>1599144811295</created>
@@ -174,7 +175,14 @@
       <option name="project" value="LOCAL" />
       <updated>1599194837373</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Working">
+      <created>1599266647027</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1599266647027</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -201,7 +209,8 @@
     <MESSAGE value="Finally" />
     <MESSAGE value="s" />
     <MESSAGE value="Shows up in game" />
-    <option name="LAST_COMMIT_MESSAGE" value="Shows up in game" />
+    <MESSAGE value="Working" />
+    <option name="LAST_COMMIT_MESSAGE" value="Working" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1018" y="260" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1599193716229">
@@ -216,10 +225,10 @@
       <screen x="0" y="0" width="1850" height="1080" />
     </state>
     <state x="563" y="314" width="723" height="464" key="MultipleFileMergeDialog/0.0.1850.1080@0.0.1850.1080" timestamp="1599145007712" />
-    <state x="517" y="273" key="Vcs.Push.Dialog.v2" timestamp="1599194847718">
+    <state x="517" y="273" key="Vcs.Push.Dialog.v2" timestamp="1599266656442">
       <screen x="0" y="0" width="1850" height="1080" />
     </state>
-    <state x="517" y="273" key="Vcs.Push.Dialog.v2/0.0.1850.1080@0.0.1850.1080" timestamp="1599194847718" />
+    <state x="517" y="273" key="Vcs.Push.Dialog.v2/0.0.1850.1080@0.0.1850.1080" timestamp="1599266656442" />
     <state x="869" y="453" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1599149893983">
       <screen x="0" y="0" width="1850" height="1080" />
     </state>

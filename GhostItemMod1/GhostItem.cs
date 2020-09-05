@@ -11,13 +11,16 @@ namespace GhostItemMod1
         
         public static ItemIndex GhostIndex;
         public static GameObject GhostPrefab;
+        
+        
 
         public static void Init()
         {
             AddProvider();
             AddTokens();
             AddItem();
-            On.RoR2.CharacterBody.OnInventoryChanged += CharacterBody_OnInventoryChanged;
+            On.RoR2.CharacterBody.OnInventoryChanged += orig_CharacterBody_OnInventoryChanged;
+            On.RoR2.ItemFollower.Update += orig_ItemFollow_Update;
         }
 
         private static void AddProvider()
@@ -39,9 +42,16 @@ namespace GhostItemMod1
             string longLore = "TBW";
             LanguageAPI.Add("GHOST_LORE_TOKEN", longLore);
         }
+        public static void orig_ItemFollow_Update(On.RoR2.ItemFollower.orig_Update orig, ItemFollower self)
+        {
+            GhostPrefab = self.followerPrefab;
+            orig(self);
+        }
 
         private static void AddItem()
-        {
+        { 
+        
+                
             ItemDef def = new ItemDef
             {
                 name = "GhostItem",
@@ -61,135 +71,27 @@ namespace GhostItemMod1
                 }
             };
 
+            
             GameObject GhostPrefab = Resources.Load<GameObject>("@GhostBundle:Assets/Ghost/Ghost.prefab");
-            Vector3 generalScale = new Vector3(0.05f, 0.05f, 0.05f);
+            
             ItemDisplayRuleDict rules = new ItemDisplayRuleDict(new ItemDisplayRule[]
             {
                 new ItemDisplayRule
                 {
                     ruleType = ItemDisplayRuleType.ParentedPrefab,
                     followerPrefab = GhostPrefab,
-                    childName = "Chest",
-                    localPos = new Vector3(0f, 0f, 0f),
-                    localAngles = new Vector3(0f, -0.05f, 0f),
-                    localScale = new Vector3(1,1,1),
-                }
-            });
-            rules.Add("mdlHuntress", new ItemDisplayRule[]
-            {
-                new ItemDisplayRule
-                {
-                    ruleType = ItemDisplayRuleType.ParentedPrefab,
-                    followerPrefab = GhostPrefab,
-                    childName = "Chest",
-                    localPos = new Vector3(0f, 0f, 0f),
-                    localAngles = new Vector3(0f, -0.05f, 0f),
-                    localScale = new Vector3(1,1,1),
-                }
-            });
-            rules.Add("mdlToolbot", new ItemDisplayRule[]
-            {
-                new ItemDisplayRule
-                {
-                    ruleType = ItemDisplayRuleType.ParentedPrefab,
-                    followerPrefab = GhostPrefab,
-                    childName = "LowerArmR",
-                    localPos = new Vector3(-2f, 6f, 0f),
-                    localAngles = new Vector3(45f, -90f, 0f),
-                    localScale = new Vector3(1,1,1),
-                }
-            });
-            rules.Add("mdlEngi", new ItemDisplayRule[]
-            {
-                new ItemDisplayRule
-                {
-                    ruleType = ItemDisplayRuleType.ParentedPrefab,
-                    followerPrefab = GhostPrefab,
-                    childName = "Pelvis",
-                    localPos = new Vector3(-0.25f, 0f, 0f),
-                    localAngles = new Vector3(0f, -0.05f, 0f),
-                    localScale = new Vector3(1,1,1),
-                }
-            });
-            rules.Add("mdlMage", new ItemDisplayRule[]
-            {
-                new ItemDisplayRule
-                {
-                    ruleType = ItemDisplayRuleType.ParentedPrefab,
-                    followerPrefab = GhostPrefab,
-                    childName = "IKArmPole.l",
-                    localPos = new Vector3(-0.21f, 0f, 0f),
-                    localAngles = new Vector3(0f, -0.05f, 0f),
-                    localScale = new Vector3(1,1,1),
-                }
-            });
-            rules.Add("mdlMerc", new ItemDisplayRule[]
-            {
-                new ItemDisplayRule
-                {
-                    ruleType = ItemDisplayRuleType.ParentedPrefab,
-                    followerPrefab = GhostPrefab,
-                    childName = "Pelvis",
+                    childName = "chest",
                     localPos = new Vector3(-0.22f, 0f, 0f),
-                    localAngles = new Vector3(0f, -0.05f, 0f),
-                    localScale = new Vector3(1,1,1),
+                    localAngles = new Vector3(0f, 0f, 0f),
+                    localScale = new Vector3(0f,0f,0f)
                 }
-            });
-            rules.Add("mdlTreebot", new ItemDisplayRule[]
-            {
-                new ItemDisplayRule
-                {
-                    ruleType = ItemDisplayRuleType.ParentedPrefab,
-                    followerPrefab = GhostPrefab,
-                    childName = "WeaponPlatform",
-                    localPos = new Vector3(0.2f, 0.05f, 0.2f),
-                    localAngles = new Vector3(-45f, 0f, 0f),
-                    localScale = new Vector3(1,1,1),
-                }
-            });
-            rules.Add("mdlLoader", new ItemDisplayRule[]
-            {
-                new ItemDisplayRule
-                {
-                    ruleType = ItemDisplayRuleType.ParentedPrefab,
-                    followerPrefab = GhostPrefab,
-                    childName = "Pelvis",
-                    localPos = new Vector3(-0.22f, 0f, 0f),
-                    localAngles = new Vector3(0f, -0.05f, 0f),
-                    localScale = new Vector3(1,1,1),
-                }
-            });
-            rules.Add("mdlCroco", new ItemDisplayRule[]
-            {
-                new ItemDisplayRule
-                {
-                    ruleType = ItemDisplayRuleType.ParentedPrefab,
-                    followerPrefab = GhostPrefab,
-                    childName = "Hip",
-                    localPos = new Vector3(-2.2f, 0f, 0f),
-                    localAngles = new Vector3(-10f, -0.05f, 0f),
-                    localScale = new Vector3(1,1,1),
-                }
-            });
-            rules.Add("mdlCaptain", new ItemDisplayRule[]
-{
-                new ItemDisplayRule
-                {
-                    ruleType = ItemDisplayRuleType.ParentedPrefab,
-                    followerPrefab = GhostPrefab,
-                    childName = "Pelvis",
-                    localPos = new Vector3(-0.22f, 0f, 0f),
-                    localAngles = new Vector3(0f, -0.05f, 0f),
-                    localScale =   
-                        new Vector3(1,1,1),
-                }
-});
-
+            }); 
+            
             CustomItem item = new CustomItem(def, rules);
             GhostIndex = ItemAPI.Add(item);
         }
 
-        private static void CharacterBody_OnInventoryChanged(On.RoR2.CharacterBody.orig_OnInventoryChanged orig, CharacterBody self)
+        private static void orig_CharacterBody_OnInventoryChanged(On.RoR2.CharacterBody.orig_OnInventoryChanged orig, CharacterBody self)
         {
             orig(self);
             if (!self.gameObject.GetComponent<GhostBehav>() && self.inventory.GetItemCount(GhostIndex) != 0) self.gameObject.AddComponent<GhostBehav>();
