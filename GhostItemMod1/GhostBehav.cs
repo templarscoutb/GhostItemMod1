@@ -1,3 +1,4 @@
+using System;
 using BepInEx;
 using R2API.Utils;
 using RoR2;
@@ -6,10 +7,16 @@ using UnityEngine;
 
 namespace GhostItemMod1
 {
+    [RequireComponent(typeof(ItemFollower))]
     public class GhostBehav : MonoBehaviour
     {
 
         public bool teleporterActive = false;
+        public ItemFollower itemFollower;
+        public float activeTimer;
+        public Animator itemFollowerAnimator;
+        
+
         public void Awake()
         {
 
@@ -17,19 +24,22 @@ namespace GhostItemMod1
             On.RoR2.HealthComponent.TakeDamage += orig_TakeDamage;
             On.RoR2.TeleporterInteraction.OnInteractionBegin += orig_OnTPInteractionBegin;
             On.RoR2.SceneDirector.PlaceTeleporter += orig_OnTPPlace;
-      //      On.RoR2.CaptainDefenseMatrixController.TryGrantItem += orig_CDMController;
         }
-        //Using captains defensive script to spawn Ghost when charter spawns in
-    //    private void orig_CDMController(On.RoR2.CaptainDefenseMatrixController.orig_TryGrantItem orig, CaptainDefenseMatrixController self)
-    //    {
-     //       var characterBody = self.GetFieldValue<CharacterBody>("characterBody");
-            
-     //       if (characterBody.inventory.GetItemCount(GhostItem.GhostIndex) >= 0)
-     //       {
-     //           characterBody.master.inventory.GiveItem(GhostItem.GhostIndex);
-     //       }
-     //       orig(self);
-    //    }
+        //How the ghost follows the player
+        public void Update()
+        {
+            if (itemFollower && itemFollower.followerInstance)
+            {
+                if (!itemFollowerAnimator)
+                {
+                    itemFollowerAnimator = itemFollower.followerInstance.GetComponentInChildren<Animator>();
+                }
+                activeTimer -= Time.deltaTime;
+                itemFollowerAnimator.SetBool("active", activeTimer > 0f);
+            }
+        }
+
+
 
         private void orig_OnTPPlace(On.RoR2.SceneDirector.orig_PlaceTeleporter orig, SceneDirector self)
         {
@@ -37,6 +47,7 @@ namespace GhostItemMod1
             teleporterActive = false;
             orig(self);
         }
+        
 
         private void orig_OnTPInteractionBegin(On.RoR2.TeleporterInteraction.orig_OnInteractionBegin orig,
             TeleporterInteraction self, Interactor activator)

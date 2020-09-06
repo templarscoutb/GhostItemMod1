@@ -53,6 +53,9 @@
       <Reference Include="UnityEngine, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
         <HintPath>E:\SteamExtra\steamapps\common\RoR2 Refs\UnityEngine.dll</HintPath>
       </Reference>
+      <Reference Include="UnityEngine.AnimationModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+        <HintPath>E:\SteamExtra\steamapps\common\Risk of Rain 2\Risk of Rain 2_Data\Managed\UnityEngine.AnimationModule.dll</HintPath>
+      </Reference>
       <Reference Include="UnityEngine.AssetBundleModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
         <HintPath>E:\SteamExtra\steamapps\common\RoR2 Refs\UnityEngine.AssetBundleModule.dll</HintPath>
       </Reference>
