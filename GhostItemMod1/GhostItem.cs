@@ -3,7 +3,7 @@ using RoR2;
 using System;
 using System.Reflection;
 using UnityEngine;
-using ProjectileGhostReplacementManager = On.RoR2.ProjectileGhostReplacementManager;
+
 
 namespace GhostItemMod1
 {
@@ -21,6 +21,8 @@ namespace GhostItemMod1
             AddItem();
             On.RoR2.CharacterBody.OnInventoryChanged += orig_CharacterBody_OnInventoryChanged;
         }
+
+
 
         private static void AddProvider()
         {
@@ -67,7 +69,7 @@ namespace GhostItemMod1
 
             GameObject ghostPrefab = Resources.Load<GameObject>("@GhostBundle:Assets/Ghost/Ghost.prefab");
             Vector3 generalScale = new Vector3(1.0f, 1.0f, 1.0f);
-           ItemDisplayRuleDict rules = new ItemDisplayRuleDict(new ItemDisplayRule[]
+            ItemDisplayRuleDict rules = new ItemDisplayRuleDict(new ItemDisplayRule[]
             {
                 new ItemDisplayRule
                 {
@@ -85,9 +87,9 @@ namespace GhostItemMod1
                 {
                     ruleType = ItemDisplayRuleType.ParentedPrefab,
                     followerPrefab = ghostPrefab,
-                    childName = "Chest",
-                    localPos = new Vector3(0f, 0.05f, -0.05f),
-                    localAngles = new Vector3(0f, 0f, 0f),
+                    childName = "Base",
+                    localPos = new Vector3(0.06f, -0.02f, -0.03f),
+                    localAngles = new Vector3(90f, 90f, 180f),
                     localScale = generalScale
                 }
             });

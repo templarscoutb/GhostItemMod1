@@ -24,7 +24,6 @@ namespace GhostItemMod1
             On.RoR2.HealthComponent.TakeDamage += orig_TakeDamage;
             On.RoR2.TeleporterInteraction.OnInteractionBegin += orig_OnTPInteractionBegin;
             On.RoR2.SceneDirector.PlaceTeleporter += orig_OnTPPlace;
-            On.RoR2.ItemFollower.Update += orig_ItemFollowerUpdate; 
         }
         //How the ghost follows the player
         public void Update()
@@ -39,13 +38,7 @@ namespace GhostItemMod1
                 itemFollowerAnimator.SetBool("active", activeTimer > 0f);
             }
         }
-        //Capture item follower variables
-        public void orig_ItemFollowerUpdate(On.RoR2.ItemFollower.orig_Update orig, ItemFollower self)
-        {
-            
-        }
-
-
+        
         private void orig_OnTPPlace(On.RoR2.SceneDirector.orig_PlaceTeleporter orig, SceneDirector self)
         {
             // When the teleporter is placed on a level, set teleporter Active to false and call orig
