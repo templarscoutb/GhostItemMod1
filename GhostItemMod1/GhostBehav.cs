@@ -13,14 +13,14 @@ namespace GhostItemMod1
     {
 
         public bool respawnActive = true;
-        public bool flag = false;
 
         public void Awake()
         {
 
             // Register all the hooks
             On.RoR2.HealthComponent.TakeDamage += orig_TakeDamage;
-            On.RoR2.TeleporterInteraction.GetInteractability += orig_OnInteraction;
+            On.RoR2.TeleporterInteraction.OnInteractionBegin += orig_OnInteraction;
+            On.RoR2.TeleporterInteraction.OnEnable += orig_Enable;
             On.RoR2.GoldshoresMissionController.OnEnable += orig_GSMC;
             On.RoR2.ArenaMissionController.OnEnable += orig_ARMC;
             On.RoR2.ArtifactTrialMissionController.Awake += orig_ARTMC;
@@ -32,43 +32,37 @@ namespace GhostItemMod1
         {
             Chat.AddMessage("Guardian! You have entered a darkness zone!");
         }
+        
 
-        private Interactability orig_OnTPPlace(On.RoR2.SceneDirector.orig_PlaceTeleporter orig, SceneDirector self)
+
+        private void orig_OnInteraction(On.RoR2.TeleporterInteraction.orig_OnInteractionBegin orig, TeleporterInteraction self, Interactor activator)
         {
-            // When the teleporter is placed on a level check if flag is false. If false then it is a normal map and you can respawn outside of the teleporter event
-            if (flag == false)
-            {
-                respawnActive = true;
-                Chat.AddMessage("Guardian! You have exited the darkness zone.");
-            }
-            else if (flag == true)
-                respawnActive = false;
-            
-            orig(self);
+            //Cannot respawn during teleporter event
+            respawnActive = false;
+            EnteringDarknessZone();
+            orig(self, activator);
         }
 
-
-        private void orig_OnInteraction(On.RoR2.TeleporterInteraction.orig_GetInteractability orig,
-            TeleporterInteraction self, Interactor activator)
+        private void orig_Enable(On.RoR2.TeleporterInteraction.orig_OnEnable orig, TeleporterInteraction self)
         {
-            
+            respawnActive = true;
+            Chat.AddMessage("Guardian! You are exiting the darkness zone.");
+            orig(self);
         }
 
         private void orig_GSMC(On.RoR2.GoldshoresMissionController.orig_OnEnable orig, GoldshoresMissionController self)
         {
             //If in the Golden Shore Ghost cannot respawn you
-            respawnActive = false;
-            flag = true;
-            EnteringDarknessZone();
             orig(self);
-         
+            respawnActive = false;
+            EnteringDarknessZone();
+
         }
 
         private void orig_ARMC(On.RoR2.ArenaMissionController.orig_OnEnable orig, ArenaMissionController self)
         {
             //If in the Null Realm Ghost cannot respawn you
             respawnActive = false;
-            flag = true;
             EnteringDarknessZone();
             orig(self);
        
@@ -78,7 +72,6 @@ namespace GhostItemMod1
         {
             //If in the artificial realm Ghost cannot respawn you
             respawnActive = false;
-            flag = true;
             EnteringDarknessZone();
             orig(self);
    
@@ -88,7 +81,6 @@ namespace GhostItemMod1
         {
             //If on the Moon GHost cannot respawn you
             respawnActive = false;
-            flag = true;
             EnteringDarknessZone();
             orig(self);
 
@@ -101,7 +93,7 @@ namespace GhostItemMod1
             orig(self, info);
             var characterBody = self.body;
             // If the teleporter hasn't been touched yet that level Check whether or not they have the Ghost and make sure they're dead before respawning them
-            if (respawnActive == true && characterBody.inventory.GetItemCount(GhostItem.GhostIndex) > 0 && characterBody.master.IsDeadAndOutOfLivesServer())
+            if (respawnActive && characterBody.inventory.GetItemCount(GhostItem.GhostIndex) > 0 && characterBody.master.IsDeadAndOutOfLivesServer())
             {
                 //Respawn player at position of death
                 characterBody.master.Respawn(characterBody.footPosition, new Quaternion()); 

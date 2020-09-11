@@ -34,6 +34,7 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="mock://C:/Users/templ/RiderProjects/GhostItemMod1/GhostItemMod1/GhostBehav.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/templ/RiderProjects/GhostItemMod1/GhostItemMod1/GhostBehav.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/templ/RiderProjects/GhostItemMod1/GhostItemMod1/GhostBehav.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/GhostItemMod1/GhostBehav.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/GhostItemMod1/obj/Debug/netstandard2.0/GhostItemMod1.AssemblyInfo.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -98,7 +99,7 @@
       <workItem from="1599193558736" duration="949000" />
       <workItem from="1599225908922" duration="33427000" />
       <workItem from="1599711658271" duration="594000" />
-      <workItem from="1599762015100" duration="11025000" />
+      <workItem from="1599762015100" duration="14519000" />
     </task>
     <task id="LOCAL-00001" summary="What">
       <created>1599144811295</created>
@@ -233,7 +234,14 @@
       <option name="project" value="LOCAL" />
       <updated>1599788820586</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Extended">
+      <created>1599794234100</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1599794234100</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
