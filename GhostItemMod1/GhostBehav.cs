@@ -1,10 +1,12 @@
 using System;
 using BepInEx;
+using EntityStates;
+using On.EntityStates.BrotherMonster;
 using R2API.Utils;
 using RoR2;
 using UnityEngine;
 using UnityEngine.Serialization;
-
+using TeleporterInteraction = On.RoR2.TeleporterInteraction;
 
 
 namespace GhostItemMod1
@@ -13,15 +15,19 @@ namespace GhostItemMod1
     {
 
         public bool respawnActive = true;
+        
 
         public void Awake()
         {
 
             // Register all the hooks
             On.RoR2.HealthComponent.TakeDamage += orig_TakeDamage;
-            On.RoR2.TeleporterInteraction.OnInteractionBegin += orig_OnInteraction;
-            On.RoR2.TeleporterInteraction.OnEnable += orig_Enable;
-            On.RoR2.GoldshoresMissionController.OnEnable += orig_GSMC;
+            
+            On.RoR2.TeleporterInteraction.ChargingState.OnEnter += orig_TPCharging;
+            On.RoR2.TeleporterInteraction.IdleState.GetInteractability += orig_TPBase;
+            On.RoR2.TeleporterInteraction.ChargedState.OnEnter += orig_TPCharged;
+            
+            On.RoR2.GoldshoresMissionController.Start += orig_GSMC;
             On.RoR2.ArenaMissionController.OnEnable += orig_ARMC;
             On.RoR2.ArtifactTrialMissionController.Awake += orig_ARTMC;
             On.RoR2.MoonMissionController.OnEnable += orig_MMC;
@@ -32,30 +38,48 @@ namespace GhostItemMod1
         {
             Chat.AddMessage("Guardian! You have entered a darkness zone!");
         }
+
+        private void ExitDarknessZone()
+        {
+            Chat.AddMessage("Guardian! You have exited the darkness zone.");
+        }
+
+        private Interactability orig_TPBase(TeleporterInteraction.IdleState.orig_GetInteractability orig, BaseState self, Interactor activator)
+        {
+            //When teleporter is Idle, Ghost can revive player
+            Chat.AddMessage("Base function has ran");
+            respawnActive = true;
+            orig(self, activator);
+            return Interactability.Available;
+        }
+
+        private void orig_TPCharging(TeleporterInteraction.ChargingState.orig_OnEnter orig, BaseState self)
+        {
+            //When teleporter is charging, Ghost cannot revive player
+            respawnActive = false;
+            Chat.AddMessage("Charing function has ran");
+           // EnteringDarknessZone();
+            orig(self);
+        }
+
+        private void orig_TPCharged(TeleporterInteraction.ChargedState.orig_OnEnter orig, BaseState self)
+        {
+            //When teleporter is charged, Ghost can revive again
+            respawnActive = true;
+            Chat.AddMessage("Charged function has ran");
+           // ExitDarknessZone();
+            orig(self);
+        }
+
         
 
-
-        private void orig_OnInteraction(On.RoR2.TeleporterInteraction.orig_OnInteractionBegin orig, TeleporterInteraction self, Interactor activator)
-        {
-            //Cannot respawn during teleporter event
-            respawnActive = false;
-            EnteringDarknessZone();
-            orig(self, activator);
-        }
-
-        private void orig_Enable(On.RoR2.TeleporterInteraction.orig_OnEnable orig, TeleporterInteraction self)
-        {
-            respawnActive = true;
-            Chat.AddMessage("Guardian! You are exiting the darkness zone.");
-            orig(self);
-        }
-
-        private void orig_GSMC(On.RoR2.GoldshoresMissionController.orig_OnEnable orig, GoldshoresMissionController self)
+        private void orig_GSMC(On.RoR2.GoldshoresMissionController.orig_Start orig, GoldshoresMissionController self)
         {
             //If in the Golden Shore Ghost cannot respawn you
-            orig(self);
+            Chat.AddMessage("Gold function has ran");
             respawnActive = false;
-            EnteringDarknessZone();
+            orig(self);
+            //  EnteringDarknessZone();
 
         }
 
@@ -63,7 +87,7 @@ namespace GhostItemMod1
         {
             //If in the Null Realm Ghost cannot respawn you
             respawnActive = false;
-            EnteringDarknessZone();
+           // EnteringDarknessZone();
             orig(self);
        
         }
@@ -72,7 +96,7 @@ namespace GhostItemMod1
         {
             //If in the artificial realm Ghost cannot respawn you
             respawnActive = false;
-            EnteringDarknessZone();
+           // EnteringDarknessZone();
             orig(self);
    
         }
@@ -81,7 +105,7 @@ namespace GhostItemMod1
         {
             //If on the Moon GHost cannot respawn you
             respawnActive = false;
-            EnteringDarknessZone();
+          //  EnteringDarknessZone();
             orig(self);
 
         }
@@ -96,8 +120,8 @@ namespace GhostItemMod1
             if (respawnActive && characterBody.inventory.GetItemCount(GhostItem.GhostIndex) > 0 && characterBody.master.IsDeadAndOutOfLivesServer())
             {
                 //Respawn player at position of death
-                characterBody.master.Respawn(characterBody.footPosition, new Quaternion()); 
-                
+                characterBody.master.Respawn(characterBody.footPosition, new Quaternion());
+
                 // Remove item or whatever penalty here
             }
         }

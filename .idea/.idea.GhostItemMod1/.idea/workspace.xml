@@ -32,9 +32,6 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="mock://C:/Users/templ/RiderProjects/GhostItemMod1/GhostItemMod1/GhostBehav.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/templ/RiderProjects/GhostItemMod1/GhostItemMod1/GhostBehav.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/templ/RiderProjects/GhostItemMod1/GhostItemMod1/GhostBehav.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/GhostItemMod1/GhostBehav.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/GhostItemMod1/obj/Debug/netstandard2.0/GhostItemMod1.AssemblyInfo.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -60,6 +57,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
@@ -99,7 +97,8 @@
       <workItem from="1599193558736" duration="949000" />
       <workItem from="1599225908922" duration="33427000" />
       <workItem from="1599711658271" duration="594000" />
-      <workItem from="1599762015100" duration="14519000" />
+      <workItem from="1599762015100" duration="14768000" />
+      <workItem from="1599799757893" duration="7665000" />
     </task>
     <task id="LOCAL-00001" summary="What">
       <created>1599144811295</created>
@@ -241,7 +240,14 @@
       <option name="project" value="LOCAL" />
       <updated>1599794234100</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="Extended">
+      <created>1599798499642</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1599798499642</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -285,10 +291,11 @@
       <screen x="0" y="0" width="1850" height="1080" />
     </state>
     <state x="563" y="314" width="723" height="464" key="MultipleFileMergeDialog/0.0.1850.1080@0.0.1850.1080" timestamp="1599145007712" />
-    <state x="517" y="273" key="Vcs.Push.Dialog.v2" timestamp="1599365248922">
-      <screen x="0" y="0" width="1850" height="1080" />
+    <state x="519" y="273" key="Vcs.Push.Dialog.v2" timestamp="1599798506709">
+      <screen x="0" y="0" width="1858" height="1080" />
     </state>
     <state x="517" y="273" key="Vcs.Push.Dialog.v2/0.0.1850.1080@0.0.1850.1080" timestamp="1599365248922" />
+    <state x="519" y="273" key="Vcs.Push.Dialog.v2/0.0.1858.1080@0.0.1858.1080" timestamp="1599798506709" />
     <state x="869" y="453" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1599335465019">
       <screen x="0" y="0" width="1850" height="1080" />
     </state>
